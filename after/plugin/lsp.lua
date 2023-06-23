@@ -20,6 +20,7 @@ lsp.ensure_installed({
   'gopls',
   'eslint',
   'grammarly',
+  'lua_ls',
   'jsonls',
   'prismals',
   'tailwindcss'

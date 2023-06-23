@@ -60,6 +60,11 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Debugger Plugins
+  'mfussenegger/nvim-dap',
+  'rcarriga/nvim-dap-ui',
+  'ldelossa/nvim-dap-projects',
+
   -- LSP Plugins
   {
     'VonHeikemen/lsp-zero.nvim',
@@ -177,6 +182,12 @@ require('lazy').setup({
 
   { import = 'custom.plugins' },
 }, {})
+
+-- Debug .nvim finder
+require('nvim-dap-projects').search_project_config()
+
+-- dap-ui setup
+require("dapui").setup()
 
 -- [[ Require Core Configuration ]]
 require('core')
